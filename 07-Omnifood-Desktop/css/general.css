@@ -30,6 +30,7 @@ Paragraph Default 1.6
 - Grays: 
     #555
     #333
+    #6f6f6f
 
 --- 03 SHADOWS
 
@@ -79,7 +80,8 @@ body {
   font-weight: 600;
 
   /* Put transition on original "state" */
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
+  transition: all 0.3s ease;
 }
 
 .btn--full:link,
@@ -107,8 +109,18 @@ body {
   box-shadow: 0 0 0 3px #fff inset;
 }
 
-.margin-right-sm {
-  margin-right: 1.6rem !important;
+.link:link, .link:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    padding-bottom: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link:hover, .link:active {
+   color: #cf711f;
+   border-bottom: 1px solid transparent;
 }
 
 .heading-primary,
@@ -167,4 +179,22 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Helper Classes */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
 }
